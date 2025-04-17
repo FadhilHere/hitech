@@ -1,4 +1,6 @@
 import React from "react";
+import maskot1 from "/maskot1.png"; // ganti path sesuai lokasi logo kamu
+import maskot2 from "/maskot2.png"; // ganti path sesuai lokasi logo kamu
 
 const Timeline = () => {
   const events = [
@@ -17,15 +19,15 @@ const Timeline = () => {
     <section className="relative bg-gradient-to-b from-[#1F4180] via-[#1f3a66] to-[#1F4180] text-white py-10 px-4 overflow-hidden">
       {/* Ornamen Kiri */}
       <img
-        src="/ornamen-kiri.png"
+        src={maskot1}
         alt="Ornamen Kiri"
-        className="absolute left-0 top-1/4 w-32 opacity-20 pointer-events-none"
+        className="absolute left-40 top-1/4 w-40 pointer-events-none"
       />
       {/* Ornamen Kanan */}
       <img
-        src="/ornamen-kanan.png"
+        src={maskot2}
         alt="Ornamen Kanan"
-        className="absolute right-0 top-1/2 w-32 opacity-20 pointer-events-none"
+        className="absolute right-40 top-1/2 w-40 pointer-events-none"
       />
 
       <div className="max-w-5xl mx-auto relative z-10">
