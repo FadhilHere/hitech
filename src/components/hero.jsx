@@ -1,10 +1,10 @@
 // src/components/Hero.tsx
-import logo from '/maskot1.png' // ganti path sesuai lokasi logo kamu
+import logo from '/logo-hitech7.png' // ganti path sesuai lokasi logo kamu
 import maskot from '/maskot2.png' // ganti path sesuai lokasi logo kamu
 
 const Hero = () => {
   return (
-    <section className="pt-28 pb-20 px-6 bg-[#1F4180] relative overflow-hidden">
+    <section className="pt-28 pb-20 px-6 py-4 bg-[#1F4180] relative overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         {/* Text Section */}
         <div className="text-center md:text-left">

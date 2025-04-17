@@ -27,14 +27,16 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="text-xl font-semibold text-[#1F4180]">HITECH</div>
+      <div className="flex items-center">
+        <img src="/logo-hitech7.png" alt="HITECH Logo" className="h-10 w-auto" />
+      </div>
 
         {/* Desktop menu */}
         <div className="hidden md:flex space-x-8 items-center mx-auto">
-          <a href="#home" className="text-[#1F4180] font-medium hover:underline">Home</a>
-          <a href="#event" className="text-[#1F4180] font-medium hover:underline">Event</a>
-          <a href="#about" className="text-[#1F4180] font-medium hover:underline">About Us</a>
-          <a href="#faq" className="text-[#1F4180] font-medium hover:underline">FAQ</a>
+          <a href="#home" className="text-[#1F4180] font-bold hover:underline">Home</a>
+          <a href="#event" className="text-[#1F4180] font-bold hover:underline">Event</a>
+          <a href="#about" className="text-[#1F4180] font-bold hover:underline">About Us</a>
+          <a href="#faq" className="text-[#1F4180] font-bold hover:underline">FAQ</a>
         </div>
 
         {/* Register button (desktop) */}

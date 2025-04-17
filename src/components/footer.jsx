@@ -4,16 +4,23 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-400 py-10 w-full">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-8">
-        <div>
-          <h2 className="text-white text-lg font-semibold"> 
-            <span className="text-blue-400">HITECH</span>
-          </h2>
-          <p className="mt-2">
+        <div className="flex flex-col items-center md:items-start text-center md:text-right">
+          <div className="flex items-center mb-3">
+            <img src="/logo-hitech7.png" alt="HITECH Logo" className="h-10 w-auto" />
+          </div>
+          <p className="text-sm text-left">
             Hitech adalah sebuah perlombaan nasional yang diselenggarakan oleh HIMASISTIFO Politeknik Caltex Riau.
           </p>
-          <div className="flex gap-4 mt-4 text-xl">
+          <div className="flex gap-4 mt-4">
             <FaFacebook className="hover:text-white cursor-pointer" />
-            <FaInstagram className="hover:text-white cursor-pointer" />
+            <a
+              href="https://instagram.com/hitech7__"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="hover:text-white cursor-pointer" />
+            </a>
+
             <FaXTwitter className="hover:text-white cursor-pointer" />
             <FaGithub className="hover:text-white cursor-pointer" />
             <FaYoutube className="hover:text-white cursor-pointer" />
@@ -21,35 +28,39 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className="text-white font-semibold">Lorem Ipsum</h3>
-          <ul className="mt-2 space-y-2">
-            <li>Lorem Ipsum</li> 
+          <h3 className="text-white font-semibold mb-2">Lorem Ipsum</h3>
+          <ul className="space-y-1 text-sm">
             <li>Lorem Ipsum</li>
-            <li>Lorem Ipsum</li>
-            <li>Lorem Ipsum</li>
-            <li>Lorem Ipsum</li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-white font-semibold">Lorem Ipsum</h3>
-          <ul className="mt-2 space-y-2">
-            <li>Lorem Ipsum</li>
-            <li>Lorem Ipsum</li>
-            <li>Lorem Ipsum</li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-white font-semibold">Lorem Ipsum</h3>
-          <ul className="mt-2 space-y-2">
             <li>Lorem Ipsum</li>
             <li>Lorem Ipsum</li>
             <li>Lorem Ipsum</li>
             <li>Lorem Ipsum</li>
           </ul>
         </div>
+
         <div>
-          <h3 className="text-white font-semibold">Lorem Ipsum</h3>
-          <ul className="mt-2 space-y-2">
+          <h3 className="text-white font-semibold mb-2">Lorem Ipsum</h3>
+          <ul className="space-y-1 text-sm">
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-white font-semibold mb-2">Lorem Ipsum</h3>
+          <ul className="space-y-1 text-sm">
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-white font-semibold mb-2">Lorem Ipsum</h3>
+          <ul className="space-y-1 text-sm">
             <li>Lorem Ipsum</li>
             <li>Lorem Ipsum</li>
             <li>Lorem Ipsum</li>
@@ -57,8 +68,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mt-10 text-center border-t border-gray-700 pt-4 px-6">
-        <p>&copy; 2025 Kabinet Rakshabinaya, Ristek. All rights reserved.</p>
+      <div className="border-t border-gray-800 mt-8 pt-6 text-center">
+        <p className="text-sm">&copy; 2025 Kabinet Rakshabinaya, Ristek. All rights reserved.</p>
       </div>
     </footer>
   );
