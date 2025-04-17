@@ -20,10 +20,7 @@ const Hero = () => {
           </h2>
 
           <p className="text-base md:text-lg mb-8 leading-relaxed text-white/90 drop-shadow-md animate-fade-in-up delay-200">
-            Hi-Tech 7 adalah kompetisi Teknologi dan Bisnis terbesar 2025,
-            membuka ruang bagi para inovator muda untuk bersinar dalam kategori
-            UI/UX, Business Plan, dan Visualisasi Data. Satukan ide, wujudkan dampak
-            besar.
+            Hi-Tech 7 adalah kompetisi Teknologi dan Bisnis terbesar 2025, membuka ruang bagi para inovator muda dari semua tingkat pendidikan! Kompetisi ini terbuka untuk pelajar SMA/SMK/MA serta mahasiswa aktif D3/D4/S1. Temukan kategori lomba UI/UX, Business Plan, dan Visualisasi Data, dan tunjukkan kreativitasmu dalam menciptakan dampak besar.
           </p>
 
           <a
@@ -41,13 +38,17 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* Maskot */}
-        <div className="hidden md:block w-full md:w-1/2 text-center animate-fade-in-up delay-500">
+        {/* Maskot dan Speech Bubble */}
+        <div className="hidden md:block w-full md:w-1/2 text-center animate-fade-in-up delay-500 relative">
           <img
             src={maskot2}
             alt="Maskot HiTech 7"
             className="w-[85%] h-auto mx-auto drop-shadow-2xl brightness-110 pointer-events-none animate-float"
           />
+          {/* Speech Bubble (ditempatkan di sebelah kanan maskot) */}
+          <div className="absolute top-0 left-[420px] bg-white text-[#1F4180] p-4 rounded-lg shadow-xl w-[250px] text-center animate-float">
+            <p className="text-lg font-semibold">Lomba ini terbuka untuk Pelajar SMA/Sederajat dan Mahasiswa aktif D3/D4/S1 lhoo!</p>
+          </div>
         </div>
       </div>
 
