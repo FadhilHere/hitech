@@ -5,6 +5,7 @@ import './App.css'
 import Footer from "./components/footer";
 import Navbar from './components/navbar';
 import Hero from './components/hero';
+import Timeline from './components/timeline';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <main className="flex-grow">
         <Hero />
+        <Timeline/>
       </main>
       <Footer />
     </div>
