@@ -4,8 +4,8 @@ import maskot from '/maskot2.png' // ganti path sesuai lokasi logo kamu
 
 const Hero = () => {
   return (
-    <section className="pt-28 pb-20 px-6 py-4 bg-[#1F4180] relative overflow-hidden">
-      <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+    <section className="pt-28 pb-20 bg-[#1F4180] relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         {/* Text Section */}
         <div className="text-center md:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white font-pulsar leading-tight flex flex-wrap justify-center md:justify-start items-center gap-3">
@@ -26,10 +26,11 @@ const Hero = () => {
           </p>
           <a
             href="#register"
-            className="mt-6 inline-block bg-gradient-to-r from-[#306BA1] to-[#D6E0F9] text-[#1F4180] font-semibold px-6 py-3 rounded-lg shadow hover:opacity-90 transition"
+            className="mt-6 inline-block bg-gradient-to-r from-[#64C6F7] to-[#306BA1] text-white font-semibold px-6 py-3 rounded-lg shadow hover:opacity-90 transition"
           >
             Join Now →
           </a>
+
         </div>
 
         {/* Mascot Image */}
