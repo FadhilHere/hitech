@@ -24,7 +24,7 @@ const Hero = () => {
           </p>
 
           <a
-            href="#daftar"
+            href="https://bit.ly/PENDAFTARANHITECH-7"
             className="bg-[#ffdd57] text-black py-3 px-8 text-lg font-semibold rounded-full shadow-lg hover:bg-[#ffd43b] hover:scale-105 transition-all duration-300 inline-block animate-fade-in-up delay-300"
           >
             <span className="flex items-center justify-center">

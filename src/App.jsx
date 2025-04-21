@@ -9,6 +9,9 @@ import BusinessPlanPage from "./components/BusinessPlanPage";
 import CompetitionsPage from "./components/CompetitionPage";
 import HadiahPage from "./components/HadiahPage";
 import CountdownSection from "./components/CountdownSection";
+import OurSponsor from "./components/OurSponsor";
+import OurPartnership from "./components/OurPartnership";
+import Faq from "./components/Faq";
 
 function App() {
   return (
@@ -24,9 +27,12 @@ function App() {
                 <>
                   <Hero />
                   <CountdownSection />
-                  <HadiahPage />
                   <Timeline />
                   <CompetitionsPage />
+                  <HadiahPage />
+                  <Faq />
+                  <OurSponsor />
+                  <OurPartnership />
                 </>
               }
             />

@@ -32,9 +32,9 @@ const Navbar = () => {
 
         {/* Desktop menu */}
         <div className="hidden md:flex space-x-8 items-center mx-auto">
-          <a href="#home" className="text-[#1F4180] font-bold hover:underline">Home</a>
-          <a href="#event" className="text-[#1F4180] font-bold hover:underline">Event</a>
-          <a href="#about" className="text-[#1F4180] font-bold hover:underline">About Us</a>
+          <a href="/" className="text-[#1F4180] font-bold hover:underline">Home</a>
+          <a href="#" className="text-[#1F4180] font-bold hover:underline">Event</a>
+          <a href="/" className="text-[#1F4180] font-bold hover:underline">About Us</a>
           <a href="#faq" className="text-[#1F4180] font-bold hover:underline">FAQ</a>
         </div>
 

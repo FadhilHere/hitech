@@ -33,7 +33,7 @@ const CompetitionsPage = () => {
     <section className="bg-gradient-to-b from-[#1F4180] via-[#173A64] to-[#1F4180] text-white py-24 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-5xl font-extrabold text-center mb-16 tracking-wider">
-          <span className="ml-3 align-middle">Lomba HiTech 7</span>
+          <span className="ml-3 align-middle">Ada lomba apa aja?</span>
           <img
             src={logo}
             alt="logo"
