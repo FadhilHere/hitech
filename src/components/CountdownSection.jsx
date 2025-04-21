@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "/logo-hitech7.png";
+
 const CountdownSection = () => {
     const calculateTimeLeft = () => {
         const deadline = new Date("2025-05-09T23:59:00");
@@ -31,6 +32,14 @@ const CountdownSection = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const [isHolding, setIsHolding] = useState(false);
     const text = "Are you ready? Come join us!";
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTimeLeft(calculateTimeLeft());
+        }, 1000); // Update every second
+
+        return () => clearInterval(interval); // Clear interval on component unmount
+    }, []);
 
     useEffect(() => {
         const timeout = setTimeout(() => {
