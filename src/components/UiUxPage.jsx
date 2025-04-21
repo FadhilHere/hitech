@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   FaMoneyBillAlt,
   FaUserGraduate,
@@ -6,9 +7,11 @@ import {
   FaTiktok,
   FaWhatsapp,
   FaEnvelope,
-} from "react-icons/fa"; // Import ikon
+} from "react-icons/fa";
 
 const UiUxPage = () => {
+  const [showSocialDropdown, setShowSocialDropdown] = useState(false);
+
   return (
     <section className="min-h-screen bg-gradient-to-b from-[#1F4180] to-[#173A64] text-white mt-20 py-20 px-6 font-[Poppins] relative">
       {/* Dekorasi Glow di Latar Belakang */}
@@ -58,16 +61,43 @@ const UiUxPage = () => {
               </p>
             </div>
 
-            <div className="flex flex-col items-center bg-[#1F4180] p-6 rounded-xl shadow-xl text-white space-y-4 hover:scale-105 transition-transform">
-              <FaInstagram className="text-4xl text-yellow-300" />
-              <h3 className="text-xl font-semibold">Sosial Media</h3>
-              <p className="text-center text-gray-200">
-                Wajib follow akun Instagram & Tiktok @hitech7_.
-              </p>
+            {/* Sosial Media Dropdown */}
+            <div className="relative">
+              <div
+                onClick={() => setShowSocialDropdown(!showSocialDropdown)}
+                className="flex flex-col items-center bg-[#1F4180] p-6 rounded-xl shadow-xl text-white space-y-4 hover:scale-105 transition-transform cursor-pointer"
+              >
+                <FaInstagram className="text-4xl text-yellow-300" />
+                <h3 className="text-xl font-semibold">Sosial Media</h3>
+                <p className="text-center text-gray-200">
+                  Klik untuk pilih platform
+                </p>
+              </div>
+
+              {showSocialDropdown && (
+                <div className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 bg-[#173A64] border border-yellow-300 rounded-xl shadow-lg p-4 z-20 space-y-2">
+                  <a
+                    href="https://www.instagram.com/hitech7__?igsh=YzBkdWc4Y3g5NzJj"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-white hover:text-yellow-300"
+                  >
+                    <FaInstagram className="text-xl" /> Instagram
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@hitech7__?_t=ZS-8viiR3gGajS&_r=1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-white hover:text-yellow-300"
+                  >
+                    <FaTiktok className="text-xl" /> TikTok
+                  </a>
+                </div>
+              )}
             </div>
           </div>
 
-          {/* Tombol "Selengkapnya" untuk Guidebook tanpa Garis Bawah */}
+          {/* Tombol Guidebook */}
           <div className="mt-8 text-center">
             <a
               href="https://bit.ly/GuidebookUIUXHITECH-7"
@@ -79,6 +109,7 @@ const UiUxPage = () => {
             </a>
           </div>
 
+          {/* Tombol Daftar Sekarang */}
           <div className="mt-8 flex justify-center animate__animated animate__fadeIn animate__delay-3s">
             <a
               href="https://bit.ly/PENDAFTARANHITECH-7"
@@ -90,6 +121,7 @@ const UiUxPage = () => {
             </a>
           </div>
         </div>
+
         {/* Contact Person */}
         <div className="mt-12 text-center">
           <div className="bg-white/10 p-6 md:p-10 rounded-3xl shadow-lg backdrop-blur-lg">

@@ -6,10 +6,11 @@ import logo from "/logo-hitech7.png";
 const Timeline = () => {
   const events = [
     { title: "Pendaftaran", date: "14 April - 10 Mei 2025", id: 1 },
-    { title: "Seminar", date: "10 Mei 2025", id: 2 },
-    { title: "Batas Pengumpulan Karya", date: "14 Mei 2025", id: 3 },
-    { title: "Pengumuman Finalis", date: "20 Mei 2025", id: 4 },
-    { title: "Final", date: "Akan Diumumkan", id: 5 },
+    { title: "Workshop", date: "24, 25, dan 28 April 2025", id: 2 },
+    { title: "Seminar", date: "10 Mei 2025", id: 3 },
+    { title: "Batas Pengumpulan Karya", date: "14 Mei 2025", id: 4 },
+    { title: "Pengumuman Finalis", date: "20 Mei 2025", id: 5 },
+    { title: "Final", date: "Akan Diumumkan", id: 6 },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);

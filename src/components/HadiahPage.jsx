@@ -35,7 +35,7 @@ import {
       let count = 0;
       const interval = setInterval(() => {
         if (count < 10000000) {
-          count += 250000;
+          count += 20000;
           setPrize(count);
         } else {
           setPrize(10000000);
