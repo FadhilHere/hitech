@@ -7,9 +7,9 @@ const Hero = () => {
     <section className="relative bg-gradient-to-b from-[#1F4180] via-[#173A64] to-[#1F4180] text-white pt-36 pb-28 px-6 overflow-hidden font-[Poppins]">
       {/* Dekorasi Blur */}
       <div className="absolute w-80 h-80 bg-[#ffd700] opacity-20 rounded-full blur-[120px] top-[-50px] left-[-100px] z-0"></div>
-      <div className="absolute w-96 h-96 bg-[#00c6ff] opacity-20 rounded-full blur-[100px] bottom-[-80px] right-[-100px] z-0"></div>
+      {/* <div className="absolute w-96 h-96 bg-[#00c6ff] opacity-20 rounded-full blur-[100px] bottom-[-80px] right-[-100px] z-0"></div> */}
 
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto gap-12">
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto px-6 py-4 gap-12">
         {/* Teks (tanpa kotak) */}
         <div className="w-full md:w-1/2 text-left">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg animate-fade-in-up">
@@ -64,6 +64,7 @@ const Hero = () => {
           }
         `}
       </style>
+
     </section>
   );
 };

@@ -8,6 +8,7 @@ import VisualisasiDataPage from "./components/VisualisasiDataPage";
 import BusinessPlanPage from "./components/BusinessPlanPage";
 import CompetitionsPage from "./components/CompetitionPage";
 import HadiahPage from "./components/HadiahPage";
+import CountdownSection from "./components/CountdownSection";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
               element={
                 <>
                   <Hero />
-                  <HadiahPage/>
+                  <CountdownSection />
+                  <HadiahPage />
                   <Timeline />
                   <CompetitionsPage />
                 </>
