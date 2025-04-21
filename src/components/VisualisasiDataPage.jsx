@@ -20,7 +20,7 @@ const UiUxPage = () => {
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <h1 className="text-5xl font-extrabold mb-6 text-yellow-300 animate__animated animate__fadeIn animate__delay-1s glow-text">
-          UI/UX Competition
+          Visualisasi Data Competition
         </h1>
         <p className="text-lg md:text-xl text-gray-200 mb-12 leading-relaxed animate__animated animate__fadeIn animate__delay-2s">
           Selamat datang di halaman lomba Visualisasi Data! Temukan informasi lengkap

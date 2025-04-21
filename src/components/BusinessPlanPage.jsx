@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import {
+  FaMoneyBillAlt,
+  FaUserGraduate,
+  FaCheckCircle,
+  FaInstagram,
+  FaTiktok,
+  FaWhatsapp,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const BusinessPlanPage = () => {
+  const [showSocialDropdown, setShowSocialDropdown] = useState(false);
+
   return (
      <section className="min-h-screen bg-gradient-to-b from-[#1F4180] to-[#173A64] text-white mt-20 py-20 px-6 font-[Poppins] relative">
          {/* Dekorasi Glow di Latar Belakang */}
@@ -9,7 +20,7 @@ const BusinessPlanPage = () => {
    
          <div className="max-w-4xl mx-auto text-center relative z-10">
            <h1 className="text-5xl font-extrabold mb-6 text-yellow-300 animate__animated animate__fadeIn animate__delay-1s glow-text">
-             UI/UX Competition
+             Business Plan Competition
            </h1>
            <p className="text-lg md:text-xl text-gray-200 mb-12 leading-relaxed animate__animated animate__fadeIn animate__delay-2s">
              Selamat datang di halaman lomba Business Plan! Temukan informasi lengkap
