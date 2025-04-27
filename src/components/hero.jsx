@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto px-6 py-4 gap-12">
         {/* Teks (tanpa kotak) */}
         <div className="w-full md:w-1/2 text-left">
-          <h1 className="text-4xl md:text-6xl font-extrabold font-poppins mb-4 drop-shadow-lg animate-fade-in-up">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg animate-fade-in-up">
             Hi-Tech 7
           </h1>
           <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#ffdd57] via-white to-[#00e0ff] drop-shadow animate-fade-in-up delay-100">
