@@ -147,7 +147,7 @@ const UiUxPage = () => {
 
               <div className="flex flex-col items-center bg-[#1F4180] p-4 rounded-xl shadow-xl text-white space-y-3 hover:scale-105 transition-transform">
                 <h3 className="text-lg font-semibold text-yellow-300">
-                  Riko Fadhila
+                  Theresa Olivia
                 </h3>
                 <p className="text-center text-gray-200 text-sm">
                   <FaWhatsapp className="inline-block text-yellow-300 mr-2" />

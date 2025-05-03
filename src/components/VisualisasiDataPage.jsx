@@ -20,13 +20,13 @@ const UiUxPage = () => {
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <h1 className="text-5xl font-extrabold mb-6 text-yellow-300 animate__animated animate__fadeIn animate__delay-1s glow-text">
-          Visualisasi Data Competition
+          Poster Visualisasi Data
         </h1>
         <p className="text-lg md:text-xl text-gray-200 mb-12 leading-relaxed animate__animated animate__fadeIn animate__delay-2s">
-          Selamat datang di halaman lomba Visualisasi Data! Temukan informasi lengkap
-          mengenai ketentuan lomba, cara pendaftaran, dan file penting lainnya.
-          Tunjukkan kreativitasmu dalam merancang antarmuka yang menarik dan
-          fungsional!
+          Selamat datang di halaman lomba Visualisasi Data! Temukan informasi
+          lengkap mengenai ketentuan lomba, cara pendaftaran, dan file penting
+          lainnya. Tunjukkan kreativitasmu dalam merancang antarmuka yang
+          menarik dan fungsional!
         </p>
 
         <div className="bg-white/10 p-8 rounded-3xl shadow-lg backdrop-blur-lg text-left">
@@ -147,7 +147,7 @@ const UiUxPage = () => {
 
               <div className="flex flex-col items-center bg-[#1F4180] p-4 rounded-xl shadow-xl text-white space-y-3 hover:scale-105 transition-transform">
                 <h3 className="text-lg font-semibold text-yellow-300">
-                  Riko Fadhila
+                  Theresa Olivia
                 </h3>
                 <p className="text-center text-gray-200 text-sm">
                   <FaWhatsapp className="inline-block text-yellow-300 mr-2" />

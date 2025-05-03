@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import maskot1 from "/maskot1.png"; 
-import maskot2 from "/maskot2.png"; 
-import logo from "/logo-hitech7.png"; 
+import { motion } from "framer-motion";
+import maskot1 from "/maskot1.png";
+import maskot2 from "/maskot2.png";
+import logo from "/logo-hitech7.png";
 
 const Timeline = () => {
   const events = [
@@ -54,22 +55,31 @@ const Timeline = () => {
 
           <div className="flex flex-col gap-6">
             {events.map((event, index) => (
-              <div
+              <motion.div
                 key={event.id}
                 className="grid grid-cols-[1fr_auto_1fr] items-center relative transition-all duration-500"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 40 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.5 }} // Trigger when 50% of the item is in view
               >
                 {index % 2 === 0 ? (
                   <>
                     <div className="flex justify-end pr-4">
-                      <div className={`p-4 rounded-2xl w-52 text-center transition-transform duration-500 ease-in-out shadow-xl backdrop-blur-sm ${activeIndex === index ? 'bg-white/30 scale-105 ring-2 ring-yellow-300' : 'bg-white/10'}`}>
+                      <motion.div
+                        className={`p-4 rounded-2xl w-52 text-center transition-transform duration-500 ease-in-out shadow-xl backdrop-blur-sm ${activeIndex === index ? 'bg-white/30 scale-105 ring-2 ring-yellow-300' : 'bg-white/10'}`}
+                      >
                         <h3 className="text-lg font-bold text-cyan-300">{event.title}</h3>
                         <p className="text-sm text-gray-200">{event.date}</p>
-                      </div>
+                      </motion.div>
                     </div>
                     <div className="flex justify-center px-2">
-                      <div className={`w-10 h-10 text-sm font-bold rounded-full flex items-center justify-center shadow-md ring-4 ring-white ring-opacity-30 transition-transform duration-300 ${activeIndex === index ? 'bg-yellow-300 text-black scale-110 glow-effect' : 'bg-cyan-400 text-[#1F4180]'}`}>
+                      <motion.div
+                        className={`w-10 h-10 text-sm font-bold rounded-full flex items-center justify-center shadow-md ring-4 ring-white ring-opacity-30 transition-transform duration-300 ${activeIndex === index ? 'bg-yellow-300 text-black scale-110' : 'bg-cyan-400 text-[#1F4180]'}`}
+                      >
                         {event.id}
-                      </div>
+                      </motion.div>
                     </div>
                     <div></div>
                   </>
@@ -77,39 +87,27 @@ const Timeline = () => {
                   <>
                     <div></div>
                     <div className="flex justify-center px-2">
-                      <div className={`w-10 h-10 text-sm font-bold rounded-full flex items-center justify-center shadow-md ring-4 ring-white ring-opacity-30 transition-transform duration-300 ${activeIndex === index ? 'bg-yellow-300 text-black scale-110 glow-effect' : 'bg-cyan-400 text-[#1F4180]'}`}>
+                      <motion.div
+                        className={`w-10 h-10 text-sm font-bold rounded-full flex items-center justify-center shadow-md ring-4 ring-white ring-opacity-30 transition-transform duration-300 ${activeIndex === index ? 'bg-yellow-300 text-black scale-110' : 'bg-cyan-400 text-[#1F4180]'}`}
+                      >
                         {event.id}
-                      </div>
+                      </motion.div>
                     </div>
                     <div className="flex justify-start pl-4">
-                      <div className={`p-4 rounded-2xl w-52 text-center transition-transform duration-500 ease-in-out shadow-xl backdrop-blur-sm ${activeIndex === index ? 'bg-white/30 scale-105 ring-2 ring-yellow-300' : 'bg-white/10'}`}>
+                      <motion.div
+                        className={`p-4 rounded-2xl w-52 text-center transition-transform duration-500 ease-in-out shadow-xl backdrop-blur-sm ${activeIndex === index ? 'bg-white/30 scale-105 ring-2 ring-yellow-300' : 'bg-white/10'}`}
+                      >
                         <h3 className="text-lg font-bold text-cyan-300">{event.title}</h3>
                         <p className="text-sm text-gray-200">{event.date}</p>
-                      </div>
+                      </motion.div>
                     </div>
                   </>
                 )}
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </div>
-
-      {/* Animasi CSS tambahan */}
-      <style>
-        {`
-          @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-          }
-          .animate-float {
-            animation: float 4s ease-in-out infinite;
-          }
-          .glow-effect {
-            box-shadow: 0 0 10px 3px rgba(255, 255, 0, 0.6), 0 0 20px 5px rgba(255, 255, 0, 0.4);
-          }
-        `}
-      </style>
     </section>
   );
 };

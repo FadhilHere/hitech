@@ -2,13 +2,16 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
-import Timeline from "./components/timeline";
 import UiUxPage from "./components/UiUxPage";
 import VisualisasiDataPage from "./components/VisualisasiDataPage";
 import BusinessPlanPage from "./components/BusinessPlanPage";
 import CompetitionsPage from "./components/CompetitionPage";
 import HadiahPage from "./components/HadiahPage";
-
+import CountdownSection from "./components/CountdownSection";
+import OurSponsor from "./components/OurSponsor";
+import OurPartnership from "./components/OurPartnership";
+import Faq from "./components/Faq";
+import Timeline from "./components/Timeline";
 function App() {
   return (
     <Router>
@@ -22,9 +25,13 @@ function App() {
               element={
                 <>
                   <Hero />
-                  <HadiahPage/>
+                  <CountdownSection />
                   <Timeline />
                   <CompetitionsPage />
+                  <HadiahPage />
+                  <Faq />
+                  <OurSponsor />
+                  <OurPartnership />
                 </>
               }
             />
