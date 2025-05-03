@@ -3,7 +3,7 @@ import logo from "/logo-hitech7.png";
 
 const CountdownSection = () => {
     const calculateTimeLeft = () => {
-        const deadline = new Date("2025-05-09T23:59:00");
+        const deadline = new Date("2025-05-18T23:59:00");
         const now = new Date();
         const difference = deadline.getTime() - now.getTime();
 
@@ -70,7 +70,7 @@ const CountdownSection = () => {
     return (
         <section className="relative bg-gradient-to-b from-[#1F4180] via-[#173A64] to-[#1F4180] text-white pt-2 pb-20 px-6 overflow-hidden font-[Poppins]">
             <div className="relative z-10 max-w-screen-xl mx-auto text-center">
-                <p className="text-xl text-[#FFD700] mb-4 font-semibold">Pendaftaran dibuka: 14 April – 10 Mei 2025</p>
+                <p className="text-xl text-[#FFD700] mb-4 font-semibold">Pendaftaran dibuka: 14 April – 19 Mei 2025</p>
                 <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-6">Registration Closed In:</h1>
 
                 {/* Countdown */}
